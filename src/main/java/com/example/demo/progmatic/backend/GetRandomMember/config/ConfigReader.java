@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ConfigReader {
+
     @Getter
     @Value("${custom.random.resource}")
     private String resource;
@@ -17,4 +18,8 @@ public class ConfigReader {
     @Getter
     @Value("${custom.random.prefix.presented}")
     private String presentedPrefix;
+
+    @Getter
+    @Value("${custom.regex.resource}")
+    public static String deviceResource;
 }

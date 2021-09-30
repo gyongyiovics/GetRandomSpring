@@ -45,6 +45,8 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--  added by stackoverflow idea :  -->
+				<version>${project.parent.version}</version>
 				<configuration>
 					<excludes>
 						<exclude>
